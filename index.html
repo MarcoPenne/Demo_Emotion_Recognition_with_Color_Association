@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+        <script type="module" src="./model.js"></script>
+        <style>
+            #answer{
+                font-size: 20em;
+                color: white;
+                position: absolute;
+            }
+            #loading{
+                font-size: 4em;
+                position: absolute;
+            }
+
+            .camera{
+                z-index: -1;
+                place-self: center;
+            }
+
+            #canvas{
+                position: absolute;
+                align-self: center;
+            }
+        </style>
+    </head>
+    <body style="background-color:grey;">
+        <div id = "loading" textsize="30">
+            Loading neural model...
+        </div>
+        <div id = "answer" style="font-size: 8em;">
+            
+        </div>
+        <div class="camera" >
+            <video id="video"  autoplay playsinline>Video stream not available.</video>
+        </div>
+        <canvas id="canvas" hidden>
+
+        </canvas>
+    </body>
+</html>
