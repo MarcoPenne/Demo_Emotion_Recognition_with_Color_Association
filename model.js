@@ -3,7 +3,7 @@
 let model;
 async function init(){
 
-    model = await tf.loadGraphModel('graph_ResNet_finetuned/model.json');
+    model = await tf.loadGraphModel('graph_ResNet_finetuned2/model.json');
 
     document.getElementById("loading").hidden = true;
     // JavaScript
